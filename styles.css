@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Selima";
+    src: url("assets/font/Selima.otf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("assets/font/Montserrat-VariableFont_wght.ttf");
+}
+
+
+/* Variables Baase */
+:root {
+    /* Header */
+    --font-family-menu: "Montserrat";
+    --font-family-titles: "Selima";
+    --font-family-text: "Source Serif Pro";
+    --gradient-principal: linear-gradient(270deg, #B5FEC6 0%, #48ACC7 100%);
+    --color-text-base: #6E6E6E;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 32px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: "Selima";
+}
+
+.center-h-v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    background: var(--gradient-principal);
+    /* font-size: 128px; */
+    font-size: calc(12px + 14vw);
+    font-weight: 500;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: var(--font-family-titles);
+    padding-bottom: 5vw;
+    margin-top: -30px !important;
+    padding-left: 20px;
+}
+
+.text {
+    font-family: var(--font-family-text);
+    color: var(--color-text-base);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+@media (max-width: 425px) {
+    .title {
+        font-size: calc(12px + 20vw) !important;
+        padding-left: 0px;
+    }
+    
+    body {
+        margin: 32px 10%;
+    }
+}
+
+@media (max-width: 266px) {
+    .text {
+        font-size: medium !important;
+    }
+}

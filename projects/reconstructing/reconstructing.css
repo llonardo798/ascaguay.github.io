@@ -1,0 +1,49 @@
+.main {
+    width: 90%;
+    margin: auto;
+    margin-top: 5vh;
+
+}
+
+.div-title {
+    margin-bottom: 70px;
+}
+
+.title {
+    background: #000;
+    font-size: 56px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.sub-title {
+    font-weight: bold;
+}
+
+.div-title, .div-img {
+    text-align: center;
+}
+
+img {
+    width: -webkit-fill-available;
+}
+
+.url {
+    color: blue;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+@media (max-width: 425px) {
+    .main {
+        width: 100%;
+    }
+
+    .title {
+        font-size: calc(12px + 12vw) !important;
+    }
+
+    ul {
+        padding-inline-start: 20px;
+    }
+}

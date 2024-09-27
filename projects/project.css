@@ -1,0 +1,70 @@
+.main {
+    width: 100%;
+}
+
+.div-title {
+    text-align: center;
+}
+
+.text {
+    width: 70%;
+    text-align: justify;
+    margin: 0px auto;
+}
+
+.div-title {
+    margin-bottom: 8vw;
+}
+
+.proeycts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 75px;
+    justify-content: center;
+    padding: 70px 0px 100px 0px;
+}
+
+.memorie {
+    width: min-content;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+}
+
+.img-card {
+    width: 312px;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.div-card {
+    padding: 20px 20px 24px 20px;
+}
+
+.memorie-title {
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .text {
+        width: 80%;
+    }
+}
+
+@media (max-width: 425px) {
+    .text {
+        width: 90%;
+    }
+
+    .memorie {
+        width: 80%;
+    }
+
+    .img-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .memorie-title {
+        font-size: 7vw;
+    }
+}
