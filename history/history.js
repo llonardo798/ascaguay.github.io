@@ -9,7 +9,7 @@ class History extends HTMLElement {
       .then(html => {
         shadow.innerHTML = html;
 
-        const stylesheets = ['../styles.css', 'history/history.css',];
+        const stylesheets = ['./styles.css', 'history/history.css',];
 
         stylesheets.forEach(href => {
           const linkElem = document.createElement('link');

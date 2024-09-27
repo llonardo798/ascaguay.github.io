@@ -9,7 +9,7 @@ class ElGuayabo extends HTMLElement {
         .then(html => {
           shadow.innerHTML = html;
   
-          const stylesheets = ['../styles.css', 'history/memories/el_guayabo.css',];
+          const stylesheets = ['./styles.css', 'history/memories/el_guayabo.css',];
   
           stylesheets.forEach(href => {
             const linkElem = document.createElement('link');

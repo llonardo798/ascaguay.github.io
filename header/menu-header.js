@@ -9,7 +9,7 @@ class MenuHeader extends HTMLElement {
       .then(html => {
         shadow.innerHTML = html;
 
-        const stylesheets = ['../styles.css', 'header/menu-header.css',];
+        const stylesheets = ['./styles.css', 'header/menu-header.css',];
 
         stylesheets.forEach(href => {
           const linkElem = document.createElement('link');

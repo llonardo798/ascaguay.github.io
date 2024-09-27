@@ -9,7 +9,7 @@ class ProjectReconstructing extends HTMLElement {
         .then(html => {
           shadow.innerHTML = html;
   
-          const stylesheets = ['../styles.css', 'projects/reconstructing/reconstructing.css',];
+          const stylesheets = ['./styles.css', 'projects/reconstructing/reconstructing.css',];
   
           stylesheets.forEach(href => {
             const linkElem = document.createElement('link');

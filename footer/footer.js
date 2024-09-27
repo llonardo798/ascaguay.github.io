@@ -9,7 +9,7 @@ class Footer extends HTMLElement {
         .then(html => {
           shadow.innerHTML = html; 
 
-          const stylesheets = ['../styles.css', 'footer/footer.css', ];
+          const stylesheets = ['./styles.css', 'footer/footer.css', ];
                 stylesheets.forEach(href => {
                     const linkElem = document.createElement('link');
                     linkElem.setAttribute('rel', 'stylesheet');

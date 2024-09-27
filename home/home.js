@@ -9,7 +9,7 @@ class Home extends HTMLElement {
       .then(html => {
         shadow.innerHTML = html;
 
-        const stylesheets = ['../styles.css', 'home/home.css',];
+        const stylesheets = ['./styles.css', 'home/home.css',];
 
         stylesheets.forEach(href => {
           const linkElem = document.createElement('link');

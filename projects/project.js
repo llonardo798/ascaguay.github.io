@@ -9,7 +9,7 @@ class Project extends HTMLElement {
         .then(html => {
           shadow.innerHTML = html;
   
-          const stylesheets = ['../styles.css', 'projects/project.css',];
+          const stylesheets = ['./styles.css', 'projects/project.css',];
   
           stylesheets.forEach(href => {
             const linkElem = document.createElement('link');
